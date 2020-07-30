@@ -32,10 +32,12 @@ public class GamblingSimulation {
 		if (dayCount >= 30 && wins > loose) {
 			System.out.println("Luckiest day: "+ dayCount);
 			System.out.println("Total Win Amount :" + totalProAmt);
+			System.out.println("Continue playing next month!");
 		}
 		else {
 			System.out.println("Unluckiest day: "+ dayCount);
 			System.out.println("Total Loose Amount :" + totalLosAmt);
+			System.out.println("Stop Gambling!");
 		}
 	}
 
