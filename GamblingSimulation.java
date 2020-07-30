@@ -30,9 +30,11 @@ public class GamblingSimulation {
 		int totalProAmt = stakeAmount - proAmt;
 		int totalLosAmt = stakeAmount - losAmt;
 		if (dayCount >= 30 && wins > loose) {
+			System.out.println("Luckiest day: "+ dayCount);
 			System.out.println("Total Win Amount :" + totalProAmt);
 		}
 		else {
+			System.out.println("Unluckiest day: "+ dayCount);
 			System.out.println("Total Loose Amount :" + totalLosAmt);
 		}
 	}
