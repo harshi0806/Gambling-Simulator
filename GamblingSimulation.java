@@ -24,6 +24,9 @@ public class GamblingSimulation {
 			System.out.println("Bad luck, you lost $1. Try your luck next time!");
 			gambleAmount-= BET_AMOUNT;
 		}
+		if (gambleAmount == 50 || gambleAmount == 150) {
+			System.out.println("You are resigned for the day");
+		}
 	}
 }
 
