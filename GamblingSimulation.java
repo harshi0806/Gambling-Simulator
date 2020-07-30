@@ -24,6 +24,7 @@ public class GamblingSimulation {
 			System.out.println("Bad luck, you lost $1. Try your luck next time!");
 			gambleAmount-= BET_AMOUNT;
 		}
+		// This condition resigns the gambler for the day when the gamble amount reaches to 50% of the stake
 		if (gambleAmount == 50 || gambleAmount == 150) {
 			System.out.println("You are resigned for the day");
 		}
