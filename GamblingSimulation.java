@@ -16,12 +16,24 @@ public class GamblingSimulation {
       if (dayCount >= 20) {
 		System.out.println("After" + dayCount + "days..........");
         	if (wins > loose) {
-           	System.out.println("Total amount Won: "+ proAmt);
+           	System.out.println("Total Profit : "+ proAmt);
         	}
 			else {
-           	System.out.println("Total amount lost: "+ losAmt);
+           	System.out.println("Total Loss : "+ losAmt);
         	}
 		}
+		}
+		System.out.println("After a month..........");
+		System.out.println("Total Wins: "+ wins);
+		System.out.println("Total Loose: "+ loose);
+		int stakeAmount = 30 * STAKE_AMOUNT;
+		int totalProAmt = stakeAmount - proAmt;
+		int totalLosAmt = stakeAmount - losAmt;
+		if (dayCount >= 30 && wins > loose) {
+			System.out.println("Total Win Amount :" + totalProAmt);
+		}
+		else {
+			System.out.println("Total Loose Amount :" + totalLosAmt);
 		}
 	}
 
