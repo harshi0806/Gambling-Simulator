@@ -19,7 +19,8 @@ public class GamblingSimulation {
 		if (rollOut == 1) {
 			System.out.println("Congratulations!! You won $1.");
 			gambleAmount+= BET_AMOUNT;
-		} else {
+		} //Loosing condition
+		else {
 			System.out.println("Bad luck, you lost $1. Try your luck next time!");
 			gambleAmount-= BET_AMOUNT;
 		}
